@@ -1,7 +1,7 @@
 # Spring Integration MongoDb Issue
 
 ## Issue
-The MongoDB Message Stores provided in Spring Integration do not honor the `spring.data.mongodb.auto-index-creation` property.   Even if you turn off this property, it will still create indexes for the Message Store.
+The MongoDB Message Stores provided in Spring Integration does not honor the `spring.data.mongodb.auto-index-creation` property.   Even if you turn off this property it will still create indexes for the Message Store.
 
 When working with AWS DocumentDB this causes issues because the auto-generated index names end up being too long and you receive the following error:
 ```
